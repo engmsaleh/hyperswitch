@@ -478,6 +478,9 @@ impl ConnectorData {
                 enums::Connector::Payme => {
                     Ok(ConnectorEnum::Old(Box::new(connector::Payme::new())))
                 }
+                enums::Connector::Paymob => {
+                    Ok(ConnectorEnum::Old(Box::new(connector::Paymob::new())))
+                }
                 enums::Connector::Payone => {
                     Ok(ConnectorEnum::Old(Box::new(connector::Payone::new())))
                 }
