@@ -5,6 +5,7 @@ pub mod ebanx;
 pub mod gpayments;
 pub mod netcetera;
 pub mod nmi;
+pub mod paymob;
 pub mod payone;
 pub mod plaid;
 pub mod riskified;
@@ -16,6 +17,7 @@ pub mod wellsfargopayout;
 pub mod wise;
 
 pub use hyperswitch_connectors::connectors::{
+    paymob, paymob::Paymob,
     aci, aci::Aci, adyen, adyen::Adyen, airwallex, airwallex::Airwallex, amazonpay,
     amazonpay::Amazonpay, authorizedotnet, authorizedotnet::Authorizedotnet, bambora,
     bambora::Bambora, bamboraapac, bamboraapac::Bamboraapac, bankofamerica,

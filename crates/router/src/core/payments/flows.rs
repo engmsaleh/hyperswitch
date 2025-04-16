@@ -373,6 +373,7 @@ macro_rules! default_imp_for_connector_request_id {
 impl<const T: u8> api::ConnectorTransactionId for connector::DummyConnector<T> {}
 
 default_imp_for_connector_request_id!(
+    connectors::Paymob,
     connector::Adyenplatform,
     connector::Ebanx,
     connector::Gpayments,
@@ -1128,6 +1129,7 @@ impl<const T: u8> api::FraudCheck for connector::DummyConnector<T> {}
 
 #[cfg(feature = "frm")]
 default_imp_for_fraud_check!(
+    connectors::Paymob,
     connector::Adyenplatform,
     connector::Ebanx,
     connector::Gpayments,
@@ -1526,6 +1528,7 @@ impl<const T: u8>
 {
 }
 default_imp_for_connector_authentication!(
+    connectors::Paymob,
     connector::Adyenplatform,
     connector::Ebanx,
     connector::Nmi,

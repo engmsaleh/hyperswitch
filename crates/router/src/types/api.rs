@@ -472,6 +472,7 @@ impl ConnectorData {
                 }
                 // "payeezy" => Ok(ConnectorIntegrationEnum::Old(Box::new(&connector::Payeezy)), As psync and rsync are not supported by this connector, it is added as template code for future usage
                 enums::Connector::Payme => {
+			enums::Connector::Paymob => Ok(ConnectorEnum::Old(Box::new(connector::Paymob))),
                     Ok(ConnectorEnum::Old(Box::new(connector::Payme::new())))
                 }
                 enums::Connector::Payone => {
